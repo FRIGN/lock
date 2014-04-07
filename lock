@@ -1,0 +1,14 @@
+lock() {
+
+	if ! mkdir "$1" &>/dev/null;  then
+		while true; do
+			sleep 2;
+			if [[ ! -d "$1" ]]; then
+				return
+			fi
+		done
+	fi;
+
+}
+
+lock $1
