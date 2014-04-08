@@ -20,7 +20,7 @@ lock() {
 }
 
 if [[ "$#" -eq "1" ]]; then
-	lock $1
+	lock "$1"
 else
 	echo "please supply one argument: the lock directory."
 	exit 1
