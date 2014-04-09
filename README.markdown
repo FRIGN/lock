@@ -3,6 +3,9 @@ Lock
 
 This program creates a lock directory to ensure two programs do no simulaneously execute
 
+example GIF:
+
+[example-footage](https://github.com/mutantturkey/lock/raw/master/lock.gif)
 example:
 
     calvin@barnabas:~/lock$ lock p
