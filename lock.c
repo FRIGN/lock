@@ -1,7 +1,5 @@
 /* See LICENSE for licence details. */
-
 #include <string.h>
-#include <errno.h>
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/stat.h>
@@ -30,7 +28,7 @@ int main(int argc, char **argv){
 	pathlen = argvlen + sizeof("/..") + 1;
 	path = malloc(pathlen);
 	if(path == NULL) {
-		fprintf(stderr, "Error: %s\n", strerror(errno));
+		fprintf(stderr, "malloc() failed\n");
 		return EXIT_FAILURE;
 	}
 	
