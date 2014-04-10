@@ -6,7 +6,9 @@ This program creates a lock directory to ensure two programs do no simulaneously
 example GIF:
 
 ![example-footage](https://github.com/mutantturkey/lock/raw/master/lock.gif)
-example:
+
+
+example text:
 
     calvin@barnabas:~/lock$ lock p
     calvin@barnabas:~/lock$ lock p && echo 'UNLOCKED' &
